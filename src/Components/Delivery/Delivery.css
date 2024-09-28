@@ -1,0 +1,32 @@
+.container {
+  text-align: center;
+  background-color: black;
+  width: 212vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container  .dileveryh1{
+  color: white;
+}
+
+.button {
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgba(230, 18, 28, 0.658);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgba(90, 3, 7, 0.658);
+}
+
+.successMessage {
+  color: white;
+}

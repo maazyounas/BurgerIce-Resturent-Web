@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    height: 100vh;
+    color: white;
+    padding-left: 300px;
+    transition: height 0.2s ease;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.signin-container .signin-box{
+    width: 75%;
+    transition: transform 0.18s ease, opacity 0.18s ease;
+    background-color: rgba(230, 18, 28, 0.658);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    padding: 120px;
+    border-radius: 50px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.9);
+}
+.signin-container .register-box {
+    width: 65%;
+    transition: transform 0.18s ease, opacity 0.18s ease;
+    background-color: rgba(230, 18, 28, 0.658);
+   margin-top: 30px;
+    padding: 140px;
+    border-radius: 50px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.9);
+}
+
+.signin-container .signin-box {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.signin-container.active .signin-box {
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.signin-container .register-box {
+    position: absolute;
+    top: 0;
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.signin-container.active .register-box {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+form h1 {
+    text-align: center;
+    font-size: 60px;
+    color: black;
+}
+
+form h1:hover {
+    color: white;
+}
+
+form .input-box,
+form .reginput-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 20px 0;
+}
+
+form .input-box input,
+form .reginput-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: white;
+}
+
+form .input-box input::placeholder,
+form .reginput-box input::placeholder {
+    color: white;
+}
+
+form .options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: -15px 0 15px;
+}
+
+form .options label input {
+    accent-color: white;
+    margin-right: 4px;
+}
+
+form .options a {
+    text-decoration: none;
+    color: white;
+}
+
+form .options a:hover {
+    text-decoration: underline;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.input-box .user-icon{
+    position: absolute;
+    right: 10px;
+    top: 25%;
+    transform: translateY(-50%);
+    font-size: 30px;
+}
+.input-box .password-icon{
+    position: absolute;
+    right: 10px;
+    top: 75%;
+    transform: translateY(-50%);
+    font-size: 30px;
+}
+.reginput-box .reguser-icon{
+    position: absolute;
+    right: 10px;
+    top: 16%;
+    transform: translateY(-50%);
+    font-size: 30px;
+}
+.reginput-box .regemail-icon{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+}
+.reginput-box .regpassword-icon {
+    position: absolute;
+    right: 10px;
+    top: 83%;
+    transform: translateY(-50%);
+    font-size: 30px;
+}
+
+.input-box .user-icon:hover,
+.input-box .password-icon:hover,
+.reginput-box .reguser-icon:hover,
+.reginput-box .regemail-icon:hover,
+.reginput-box .regpassword-icon :hover{
+    color: black;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: rgba(230, 18, 28, 0.658);
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+form button:active {
+    background-color: black;
+}
+
+form .toggle-link {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+form .toggle-link p a {
+    color: white;
+    text-decoration: none;
+}
+
+form .toggle-link p a:hover {
+    text-decoration: underline;
+}

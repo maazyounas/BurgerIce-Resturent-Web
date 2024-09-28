@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  background-image: url("/public/burgers.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  z-index: -1;
+}
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 5rem;
+}
+
+.home-nav {
+  position: fixed;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 200px);
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+  padding-top: 50px;
+}
+.home-logo {
+  position: absolute;
+  left: 30px;
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(254, 0, 0);
+  padding-left: 90px;
+}
+.home-navbar {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  margin-left: 300px;
+}
+.home-navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 70px;
+}
+.home-navbar a {
+  font-size: 25px;
+  height: 100%;
+  padding: 5px 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.home-navbar a:hover {
+  background-color: rgb(254, 0, 0);
+  border-bottom: 0.1rem solid rgba(290, 18, 25, 0.658);
+  border-radius: 30px;
+}
+
+.home-container {
+  color: white;
+  margin-top: 25px;
+  font-size: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; 
+  height: 100vh; 
+  padding-left: 120px; 
+  position: relative;
+  z-index: 1;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.home-container.hidden {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+.home-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.home-container p {
+  font-weight: bolder;
+}
+.home-button {
+  background-color: rgb(254, 0, 0);
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 25px;
+  margin-left: 190px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  width: 150px;
+  transition: background-color 0.3s ease;
+}
+.home-button:hover {
+  background-color: black;
+  border-radius: 20px;
+}
+.home-button:active {
+  background-color: rgba(172, 12, 17, 0.658);
+}
+
+.home-footer {
+  box-sizing: border-box;
+  width: 215%;
+  background: linear-gradient(to right, #10121b, #2d0b00);
+  color: white;
+  position: relative;
+  padding: 70px 0 30px;
+  line-height: 20px;
+  bottom: 0;
+}
+.home-footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.home-logo-footer {
+  padding-right: 300px;
+  margin-bottom: 160px;
+  font-size: 40px;
+}
+
+.home-contact {
+  text-align: left;
+}
+.home-footer-section h4 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.home-footer-section p {
+  margin: 5px 0;
+}
+.home-footer-section p:hover {
+  color: rgb(254, 0, 0);
+}
+.home-social {
+  text-align: left;
+  margin-top: 40px;
+}
+.home-social a {
+  margin: 30px;
+  color: #fff;
+  font-size: 25px;
+}
+.home-social a:hover {
+  color: rgb(254, 0, 0);
+}
+.home-footer-bottom {
+  border-top: 2px solid rgb(254, 0, 0);
+  padding-top: 10px;
+  text-align: center;
+}

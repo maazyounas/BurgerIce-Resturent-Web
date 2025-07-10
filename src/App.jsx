@@ -1,4 +1,4 @@
-import "./App.css";
+
 import Sidebar from "./Components/Sidebar/Sidebar";
 import PickUp from "./Components/PickUp/PickUp";
 import Home from "./Components/Home/Home";
@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import Delivery from "./Components/Delivery/Delivery";
 import Menu from "./Components/Menu/Menu";
+import Feedback from "./Components/Feedback/Feedback";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path="/pickup" element={<PickUp />} />
             <Route path="/delivery" element={<Delivery />} />
             <Route path="/menu" element={<Menu />} />
+            <Route path="/feedback" element={<Feedback/>} />
             {/* Optionally, add a default route */}
             <Route path="/" element={<Home />} />
           </Routes>

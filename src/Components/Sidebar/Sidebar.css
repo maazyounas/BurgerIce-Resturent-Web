@@ -3,21 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
 }
+
 .main-container {
   display: flex;
 }
-.title {
-  font-size: 30px;
-}
-.main {
-  padding: 40px;
-}
+
 .sidebar {
   position: fixed;
-  background: black;
   top: 0;
   left: 0;
   width: 200px;
@@ -25,39 +21,33 @@ a {
   background-color: transparent;
   backdrop-filter: blur(5px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-  color: white;
+  color: #ff3a00;
   z-index: 999;
   padding-top: 80px;
   overflow-x: hidden;
   transition: width 0.3s ease;
 }
-.routes {
-  color: white;
-}
+
 .top_section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: rgba(230, 18, 28, 0.658);
-  padding: 15px 15px;
+  padding: 25px 15px;
 }
-.logo {
-  font-size: 20px;
-  font-weight: bold;
-  margin-left: 10px;
-  line-height: 80px;
-}
+
 .bars {
-  color: white;
+  color: #ff3a00;
   width: 10px;
   cursor: pointer;
   font-size: 23px;
 }
+
 .search_icon {
   width: 20px;
   cursor: pointer;
   padding-left: 5px;
 }
+
 .search {
   display: flex;
   align-items: center;
@@ -65,34 +55,41 @@ a {
   height: 30px;
   padding: 10px;
 }
+
 .search input {
   border: none;
   margin-left: 20px;
   border-radius: 5px;
 }
+
 .link {
+  font-size: 20px;
   display: flex;
   align-items: center;
   color: white;
-  gap: 15px;
-  border-right: 4px solid transparent;
-  padding: 10px 15px;
+  gap: 25px;
+  padding: 15px 15px;
 }
+
 .link:hover {
-  background-color: rgba(230, 18, 25, 0.658);
-  border-right: 4px solid white;
+  background-color: #ff3a00;
+  border-right: 3px solid white;
   border-top-left-radius: 30px;
   transition: 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
 .active {
-  background-color: rgba(230, 18, 25, 0.658);
-  border-right: 4px solid white;
+  background-color: #ff3a00;
+  border-right: 3px solid white;
   border-top-left-radius: 30px;
 }
+
 .sidebar .link-text {
-  margin-left: 10px;
-  font-size: 16px;
+  margin-left: 20px;
+  font-size: 17px;
+  font-weight: bolder;
 }
+
 .input::placeholder {
-  font-size: 12px; /* Smaller font size */
+  font-size: 20px;
 }

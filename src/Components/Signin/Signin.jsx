@@ -15,16 +15,16 @@ const Signin = () => {
   };
 
   return (
+    <div className="signinpage">
     <div className={`signin-container ${isActive}`}>
-      {/* Sign In Form */}
       <div className="signin-box">
         <form action="">
           <h1>Sign In</h1>
           <div className="input-box">
             <input type="text" placeholder="Enter Username" required />
-            <FaUser className="icon user-icon" />
+            
             <input type="password" placeholder="Enter Password" required />
-            <RiLockPasswordFill className="icon password-icon" />
+            
           </div>
 
           <div className="options">
@@ -53,11 +53,8 @@ const Signin = () => {
           <h1>Register</h1>
           <div className="reginput-box">
             <input type="text" placeholder="Enter Username" required />
-            <FaUser className="reguser-icon" />
             <input type="text" placeholder="Enter Email" required />
-            <FaEnvelope className="regemail-icon" />
             <input type="password" placeholder="Enter Password" required />
-            <RiLockPasswordFill className="regpassword-icon" />
           </div>
 
           <div className="options">
@@ -78,6 +75,7 @@ const Signin = () => {
           </div>
         </form>
       </div>
+    </div>
     </div>
   );
 };
